@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: finance-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        scope: build
+      - key: JWT_SECRET
+        scope: build
+      - key: JWT_EXPIRES_IN
+        value: 1d
+      - key: PORT
+        value: 10000
