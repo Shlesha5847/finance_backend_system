@@ -118,7 +118,10 @@ Authorization: Bearer <token>
 
 ## API Endpoints
 
-Base URL: `http://localhost:5000`
+Base URL:
+- Local: `http://localhost:5000`
+- Production: `https://finance-backend-system-1-b3ay.onrender.com`
+
 
 ### Auth APIs
 
